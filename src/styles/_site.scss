@@ -1,0 +1,26 @@
+.site {
+  &-title {
+    margin: 50px 0 40px;
+    font-size: 7.6rem;
+    &-sub {
+      margin: 0 0 30px;
+      letter-spacing: 1px;
+      font-size: 2.2rem;
+      &::before,
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 140px;
+        height: 2px;
+        margin: 0 30px;
+        background-color: #fff;
+        vertical-align: middle;
+      }
+    }
+  }
+  &-description {
+    margin-bottom: 50px;
+    color: #888;
+    font-size: 1.6rem;
+  }
+}
