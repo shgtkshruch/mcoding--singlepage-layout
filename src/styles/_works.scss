@@ -13,6 +13,19 @@
   &-box {
     position: relative;
     display: table-cell;
+    overflow: hidden;
+    img {
+      transition: transform 0.5s ease-in-out;
+    }
+    &:hover img {
+      transform: scale(1.1);
+    }
+    &:nth-of-type(odd) img {
+      transform-origin: top center;
+    }
+    &:nth-of-type(even) img {
+      transform-origin: bottom center;
+    }
     @media (max-width: $screen-sm) {
       display: block;
     }
