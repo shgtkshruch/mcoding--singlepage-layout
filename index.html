@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>シングルページレイアウト</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/style.css" media="all">
+  </head>
+
+  <body>
+    <header class="header">
+      <p class="site-title-sub">Web designer's portfolio</p>
+      <h1 class="site-title">HI, MY NAME IS...</h1>
+      <p class="site-description">Check out some of my works.</p>
+      <div class="buttons"><a href="#about" class="button">LEARN MORE</a><a href="#contact" class="button button-showy">SEND MESSAGE</a></div>
+    </header>
+    <section id="about" class="about">
+      <h2 class="heading">ABOUT ME</h2>
+      <p class="about-text">はじめまして。日本でWebデザイナーをしています。
+        <br>デザインの専門学校を卒業し、制作会社での業務経験を経て、現在はフリーランスとして働いています。</p>
+      <p class="about-text">このサイトは「HTML/CSS モダンコーディング」という書籍のサンプルとして作られた、架空のWebデザイナーのポートフォリオサイトです。
+        <br>このサンプルのようなサイトをいちから作る過程を通して、HTMLとCSSの実践的なコーディングノウハウを学ぶことができます。</p>
+    </section>
+    <section class="work">
+      <h2 class="heading">WORKS</h2>
+      <div class="work-wrapper">
+        <div class="work-box tree"><img src="images/tree.jpg" alt="制作事例1" class="work-image">
+          <div class="work-description">
+            <div class="work-description-inner">
+              <p class="work-text">ひとつめの制作事例が入ります。
+                <br>簡単な説明が入ります。
+                <br>使用ツール：XXX, XXX, XXX
+                <br><a href="#" class="button button-ghost">READ MORE</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="work-box building"><img src="images/building.jpg" alt="制作事例2" class="work-image">
+          <div class="work-description">
+            <div class="work-description-inner">
+              <p class="work-text">ふたつめの制作事例が入ります。
+                <br>簡単な説明が入ります。
+                <br>使用ツール：XXX, XXX, XXX
+                <br><a href="#" class="button button-ghost">READ MORE</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="work-box lake"><img src="images/lake.jpg" alt="制作事例3" class="work-image">
+          <div class="work-description">
+            <div class="work-description-inner">
+              <p class="work-text">みっつめの制作事例が入ります。
+                <br>簡単な説明が入ります。
+                <br>使用ツール：XXX, XXX, XXX
+                <br><a href="#" class="button button-ghost">READ MORE</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="work-box sky"><img src="images/sky.jpg" alt="制作事例4" class="work-image">
+          <div class="work-description">
+            <div class="work-description-inner">
+              <p class="work-text">よっつめの制作事例が入ります。
+                <br>簡単な説明が入ります。
+                <br>使用ツール：XXX, XXX, XXX
+                <br><a href="#" class="button button-ghost">READ MORE</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skil">
+      <h2 class="heading">MY SKILS</h2>
+      <div class="skil-wrapper">
+        <div class="skil-box"><i class="skil-icon fa fa-lightbulb-o"></i>
+          <div class="skil-title">IDEA</div>
+          <p class="skil-text">何かを考えることが好きです。
+            <br>新しいことを思いついては試しています。
+            <br>ディレクションの経験もあります。
+            <br>
+          </p>
+        </div>
+        <div class="skil-box"><i class="skil-icon fa fa-paint-brush"></i>
+          <div class="skil-title">DESIGN</div>
+          <p class="skil-text">見た目の綺麗さだけじゃなくて、
+            <br>使いやすさ、情報の伝わりやすさなど、
+            <br>その先まで考えることを意識しています。
+            <br>
+          </p>
+        </div>
+        <div class="skil-box"><i class="skil-icon fa fa-code"></i>
+          <div class="skil-title">CODING</div>
+          <p class="skil-text">HTML/CSSコーディングも行います。
+            <br>正しく美しいマークアップと、
+            <br>今後の変更への強さを考慮しています。
+            <br>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2 class="heading">CONTACT</h2>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="NAME">
+        <textarea name="message" placeholder="MESSAGE"></textarea>
+        <input type="submit" value="SEND">
+      </form>
+    </section>
+    <footer class="footer">&copy; sample site</footer>
+    <script src="scripts/vendor.js"></script>
+  </body>
+
+</html>
