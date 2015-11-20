@@ -1,0 +1,16 @@
+- skils = {}
+- skils[1] = {icon: 'lightbulb-o', title: 'IDEA', p: ['何かを考えることが好きです。', '新しいことを思いついては試しています。', 'ディレクションの経験もあります。']}
+- skils[2] = {icon: 'paint-brush', title: 'DESIGN', p: ['見た目の綺麗さだけじゃなくて、', '使いやすさ、情報の伝わりやすさなど、', 'その先まで考えることを意識しています。']}
+- skils[3] = {icon: 'code', title: 'CODING', p: ['HTML/CSSコーディングも行います。', '正しく美しいマークアップと、', '今後の変更への強さを考慮しています。']}
+
+section.skil
+  h2.heading MY SKILS
+  .skil-wrapper
+    each skil, i in skils
+      .skil-box
+        i.skil-icon.fa(class="fa-#{skil.icon}")
+        .skil-title= skil.title
+        p.skil-text
+          each text, j in skil.p
+            | #{text}
+            br
