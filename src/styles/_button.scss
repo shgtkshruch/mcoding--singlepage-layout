@@ -10,6 +10,9 @@
   font-size: 1.2rem;
   &:hover {
     opacity: 0.9;
+    @media (max-width: $screen-sm) {
+      opacity: 1;
+    }
   }
   &-showy {
     background-color: #f1b400;

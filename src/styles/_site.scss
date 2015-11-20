@@ -2,10 +2,17 @@
   &-title {
     margin: 50px 0 40px;
     font-size: 7.6rem;
+    @media (max-width: $screen-sm) {
+      margin-top: 35px;
+      font-size: 5rem;
+    }
     &-sub {
       margin: 0 0 30px;
       letter-spacing: 1px;
       font-size: 2.2rem;
+      @media (max-width: $screen-sm) {
+        font-size: 1.7rem;
+      }
       &::before,
       &::after {
         content: '';
@@ -15,6 +22,11 @@
         margin: 0 30px;
         background-color: #fff;
         vertical-align: middle;
+        @media (max-width: $screen-sm) {
+          display: block;
+          width: 80%;
+          margin: 10px auto;
+        }
       }
     }
   }
