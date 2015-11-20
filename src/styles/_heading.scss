@@ -11,13 +11,18 @@
   &::before,
   &::after {
     content: '';
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-bottom: 1px solid #999;
-  }
-  &::before {
-    bottom: 5px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 20px;
+    border: 1px solid;
+    vertical-align: 8px;
+    transform: rotate(45deg);
+    @media (max-width: $screen-sm) {
+      width: 8px;
+      height: 8px;
+      margin: 0 12px;
+      vertical-align: 5px;
+    }
   }
 }
