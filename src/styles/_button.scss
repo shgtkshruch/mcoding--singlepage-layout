@@ -14,6 +14,10 @@
   &-showy {
     background-color: #f1b400;
   }
+  &-ghost {
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
   .buttons & {
     margin: 10px;
   }

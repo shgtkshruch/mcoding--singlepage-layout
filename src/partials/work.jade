@@ -1,0 +1,22 @@
+- works = {}
+- works[1] = {image: 'tree', order: 'ひとつめ'}
+- works[2] = {image: 'building', order: 'ふたつめ'}
+- works[3] = {image: 'lake', order: 'みっつめ'}
+- works[4] = {image: 'sky', order: 'よっつめ'}
+
+section.work
+  h2.heading WORKS
+  .work-wrapper
+    each work, i in works
+      .work-box(class="#{work.image}")
+        img.work-image(src="images/#{work.image}.jpg" alt="制作事例#{i}")
+        .work-description
+          .work-description-inner
+            p.work-text
+              | #{work.order}の制作事例が入ります。
+              br
+              | 簡単な説明が入ります。
+              br
+              | 使用ツール：XXX, XXX, XXX
+              br
+              a.button.button-ghost(href="#") READ MORE
